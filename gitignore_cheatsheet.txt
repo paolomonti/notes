@@ -1,0 +1,19 @@
+# 1. Ignore files by extension, anywhere in this repo
+**.log          # all .log files in this directory and any subdirectory
+
+# 2. Ignore a whole directory
+build/          # the build folder and all inside, relative to this .gitignore
+
+# 3. Ignore only at repo root
+/config.json    # matches only top-level config.json
+
+# 4. Ignore recursively specific dirs or files
+**/cache/       # any "cache" directory at any depth
+**/*.bak        # all .bak files anywhere under this directory
+
+# 5. Ignore but keep exceptions
+secret/*        # ignore everything in secret/
+!secret/keep.me # ...except this file
+
+# 6. Ignore all files with specific extension under a folder, any depth
+/tmp/**.top2    # all .top2 files under /tmp, at any depth
